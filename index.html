@@ -1,13 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    Hello Branch two. 
 
-    <p>English is a West Germanic language in the Indo-European language family, whose speakers, called Anglophones, originated in early medieval England on the island of Great Britain. The namesake of the language is the Angles, one of the ancient Germanic peoples that migrated to Britain.</p>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #dddddd;
+            display: block;
+            width: 100%;
+        }
+
+        li {
+            float: left;
+        }
+
+        a {
+            display: block;
+            padding: 8px;
+            background-color: #f4f0f0;
+        }
+
+        .nav {
+            background-color: aquamarine;
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <ul class="nav">
+            <li><a href="default.asp">Home</a></li>
+            <li><a href="news.asp">News</a></li>
+            <li><a href="contact.asp">Contact</a></li>
+            <li><a href="about.asp">About</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <p>English is a West Germanic language in the Indo-European language family, whose speakers, called Anglophones,
+            originated in early medieval England on the island of Great Britain. The namesake of the language is the
+            Angles,
+            one of the ancient Germanic peoples that migrated to Britain.</p>
+    </div>
+
+    <div class="btn has-drop-menu">
+        <input type="checkbox" id="button-click-1" class="drop-menu-input">
+        <label for="button-click-1" class="menu-label"></label>
+        Click Button <i class="arrow-down"></i>
+        <label class="full-screen" for="button-click-1"></label>
+        <ul class="drop-menu">
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+        </ul>
+    </div>
+
+    <div class="segment" style="width: 280px; margin: 0 auto;">
+        <div class="segment__item">
+            <input type="radio" class="segment__input" name="segment-a" checked>
+            <div class="segment__button">One</div>
+        </div>
+        <div class="segment__item">
+            <input type="radio" class="segment__input" name="segment-a">
+            <div class="segment__button">Two</div>
+        </div>
+        <div class="segment__item">
+            <input type="radio" class="segment__input" name="segment-a">
+            <div class="segment__button">Three</div>
+        </div>
+    </div>
 </body>
+
 </html>
